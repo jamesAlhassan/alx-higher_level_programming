@@ -120,3 +120,4 @@ Your program should be exactly 5 lines long
 You are not allowed to create new variables
 You are not allowed to use string literals
 
+9-easter_egg.py - python script that prints “The Zen of Python”, by TimPeters, followed by a new line.

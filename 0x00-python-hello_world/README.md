@@ -56,3 +56,7 @@ In the following examples, the main.c files are shown as examples. You can use t
 The prototypes of all your functions should be included in your header file called lists.h
 Don’t forget to push your header file
 All your header files should be include guarded
+
+0-run - Write a Shell script that runs a Python script.
+
+The Python file name will be saved in the environment variable $PYFILE

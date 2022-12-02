@@ -109,4 +109,12 @@ You are not allowed to use print or eval or open or import sys in your file 101-
 
 102-magic_calculation.py -  the Python function def magic_calculation(a, b): that does exactly the same as the following Python bytecode:
 
+103-fast_alphabet.py -  a program that prints the alphabet in uppercase, followed by a new line.
 
+Your program should be maximum 3 lines long
+You are not allowed to use:
+any loops
+any conditional statements
+str.join()
+any string literal
+any system calls

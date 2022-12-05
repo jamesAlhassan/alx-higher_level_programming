@@ -2,6 +2,9 @@
 
 def max_integer(my_list=[]):
     largest = None
-    for num in my_list:
-        if num == None or num > largest:
-            largest = num
+    if mylist == []:
+        return None
+    else:
+        for num in my_list:
+            if largest == None or num > largest:
+                largest = num

@@ -32,3 +32,15 @@ A README.md file, at the root of the folder of the project, is mandatory
 Your code should use the pycodestyle (version 2.8.*)
 All your files must be executable
 The length of your files will be tested using wc
+
+
+0-square_matrix_simple.py -  a function that computes the square value of all integers of a matrix.
+
+Prototype: def square_matrix_simple(matrix=[]):
+matrix is a 2 dimensional array
+Returns a new matrix:
+Same size as matrix
+Each value should be the square of the value of the input
+Initial matrix should not be modified
+You are not allowed to import any module
+You are allowed to use regular loops, map, etc.

@@ -58,3 +58,8 @@ You are not allowed to import any module
 Prototype: def uniq_add(my_list=[]):
 You are not allowed to import any module
 
+3-common_elements.py -  a function that returns a set of common elements in two sets.
+
+Prototype: def common_elements(set_1, set_2):
+You are not allowed to import any module
+

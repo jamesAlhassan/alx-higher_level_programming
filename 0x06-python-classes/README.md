@@ -48,4 +48,6 @@ A documentation is not a simple word, it’s a real sentence explaining what’s
 ## More Info
 Documentation is now mandatory! Each module, class, and method must contain docstring as comments. Example Google Style Python Docstrings
 
+0-square.py - an empty class Square that defines a square:
 
+You are not allowed to import any module

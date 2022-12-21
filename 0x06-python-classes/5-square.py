@@ -2,6 +2,7 @@
 
 """ a class with private and public instance attributes and methods"""
 
+
 class Square:
     """A class that represents a square"""
 

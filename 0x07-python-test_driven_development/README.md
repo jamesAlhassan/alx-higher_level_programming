@@ -58,3 +58,9 @@ div can’t be equal to 0, otherwise raise a ZeroDivisionError exception with th
 All elements of the matrix should be divided by div, rounded to 2 decimal places
 Returns a new matrix
 You are not allowed to import any module
+
+3-say_my_name.py - a function that prints My name is <first name> <last name>
+
+Prototype: def say_my_name(first_name, last_name=""):
+first_name and last_name must be strings otherwise, raise a TypeError exception with the message first_name must be a string or last_name must be a string
+You are not allowed to import any module

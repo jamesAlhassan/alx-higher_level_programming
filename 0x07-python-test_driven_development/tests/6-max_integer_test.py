@@ -33,3 +33,8 @@ class TestMaxInteger(unittest.TestCase):
         """Test a list with a single element."""
         one_element = [7]
         self.assertEqual(max_integer(one_element), 7)
+
+    def test_floats(self):
+        """Test a list of floats."""
+        floats = [1.53, 6.33, -9.123, 15.2, 6.0]
+        self.assertEqual(max_integer(floats), 15.2)

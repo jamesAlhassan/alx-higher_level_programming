@@ -51,3 +51,8 @@ A README.md file, at the root of the folder of the project, is mandatory
 Your code should use the pycodestyle (version 2.8.*)
 All your files must be executable
 The length of your files will be tested using wc
+
+0-rectangle.py - an empty class Rectangle that defines a rectangle:
+
+You are not allowed to import any module
+

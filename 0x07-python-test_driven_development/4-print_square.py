@@ -3,10 +3,12 @@
 """
 A function that prints a square with a specified number of  character #
 """
+
+
 def print_square(size):
     """
     Prints a square with character #
-    
+
     Arg:
        size - An integer showing the length of the square
 
@@ -26,8 +28,3 @@ def print_square(size):
         for x in range(size):
             print("#", end="")
         print("")
-
-
-
-
-

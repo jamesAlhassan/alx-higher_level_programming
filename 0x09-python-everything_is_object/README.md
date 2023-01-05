@@ -65,3 +65,9 @@ Write the name of the function in the file, without ().
 
 >>> a = 89
 >>> b = a + 1
+
+6-answer.txt - What do these 3 lines print?
+
+>>> s1 = "Best School"
+>>> s2 = s1
+>>> print(s1 == s2)

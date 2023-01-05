@@ -37,3 +37,7 @@ The length of your files will be tested using wc
 Only one line
 No Shebang
 All your files should end with a new line
+
+0-answer.txt -  What function would you use to print the type of an object?
+
+Write the name of the function in the file, without ().

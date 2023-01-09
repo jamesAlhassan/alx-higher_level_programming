@@ -47,3 +47,11 @@ A documentation is not a simple word, it’s a real sentence explaining what’s
 We strongly encourage you to work together on test cases, so that you don’t miss any edge case
 Documentation
 Do not use the words import or from inside your comments, the checker will think you try to import some modules
+
+
+0-lookup.py - a function that returns the list of available attributes and methods of an object:
+
+Prototype: def lookup(obj):
+Returns a list object
+You are not allowed to import any module
+

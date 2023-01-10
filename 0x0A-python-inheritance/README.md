@@ -125,3 +125,8 @@ size must be a positive integer, validated by integer_validator
 the area() method must be implemented
 print() should print, and str() should return, the square description: [Square] <width>/<height>
 
+100-my_int.py -  a class MyInt that inherits from int:
+
+MyInt is a rebel. MyInt has == and != operators inverted
+You are not allowed to import any module
+

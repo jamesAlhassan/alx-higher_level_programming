@@ -81,3 +81,4 @@ If the input is not an integer, raise the TypeError exception with the message: 
 If width or height is under or equals 0, raise the ValueError exception with the message: <name of the attribute> must be > 0. Example: width must be > 0
 If x or y is under 0, raise the ValueError exception with the message: <name of the attribute> must be >= 0. Example: x must be >= 0
 
+Update the class Rectangle by adding the public method def area(self): that returns the area value of the Rectangle instance.

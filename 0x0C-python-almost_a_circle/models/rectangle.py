@@ -16,8 +16,8 @@ class Rectangle(Base):
 
     @property
     def width(self):
-       """Get the value of width like an attribute"""
-       return self.__width
+        """Get the value of width like an attribute"""
+        return self.__width
 
     @property
     def height(self):

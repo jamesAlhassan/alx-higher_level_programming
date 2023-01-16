@@ -82,3 +82,5 @@ If width or height is under or equals 0, raise the ValueError exception with the
 If x or y is under 0, raise the ValueError exception with the message: <name of the attribute> must be >= 0. Example: x must be >= 0
 
 Update the class Rectangle by adding the public method def area(self): that returns the area value of the Rectangle instance.
+								       
+Update the class Rectangle by adding the public method def display(self): that prints in stdout the Rectangle instance with the character # - you don’t need to handle x and y here.

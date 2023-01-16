@@ -14,6 +14,10 @@ class Rectangle(Base):
         self.y = y
         super().__init__(id)
 
+    def __str__(self):
+        """String representation of the class"""
+        return (f"[Rectangle] ({self.id}) {self.x}/{self.y} - \ {self.width}/{self.height}")
+
     @property
     def width(self):
         """Get the value of width like an attribute"""
@@ -92,3 +96,5 @@ class Rectangle(Base):
             for column in range(self.__width):
                 print("#", end="")
             print()
+
+

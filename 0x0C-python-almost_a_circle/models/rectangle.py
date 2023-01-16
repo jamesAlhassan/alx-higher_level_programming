@@ -16,7 +16,7 @@ class Rectangle(Base):
 
     def __str__(self):
         """String representation of the class"""
-        return (f"[Rectangle] ({self.id}) {self.x}/{self.y} - \ {self.width}/{self.height}")
+        return (f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}")
 
     @property
     def width(self):

@@ -55,3 +55,19 @@ class Rectangle(Base):
             raise ValueError('height must be > 0')
 
         self.__height = value
+
+    @x.setter
+    def x(self, value):
+        """sets the value of x"""
+        if value < 0:
+            raise ValueError('x must be >= 0')
+
+        self.__x = value
+
+    @y.setter
+    def y(self, value):
+        """ sets the value of y"""
+        if value < 0:
+            raise ValueError('y must be >= 0')
+
+        self.__y = value

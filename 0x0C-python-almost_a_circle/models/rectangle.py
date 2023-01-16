@@ -80,5 +80,5 @@ class Rectangle(Base):
 
     def area(self):
         """ returns the area of the reactangle 'Rectangle'"""
-        retiurn (self.__width * self.__height)
+        return (self.__width * self.__height)
 

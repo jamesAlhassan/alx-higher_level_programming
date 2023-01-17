@@ -2,7 +2,7 @@
 """Base class for all classes"""
 
 import json
-
+import csv
 
 class Base:
     """ Base class for all other class"""
@@ -77,3 +77,37 @@ class Base:
                 for dictionary in list_dictionaries:
                     list_of_instances.append(cls.create(**dictionary))
         return list_of_instances
+
+    @classmethod
+    def save_to_file_csv(cls, list_objs):
+        """Serializes list_objs and saves to file"""
+
+        # if (type(list_objs) != list and list_objs is not None
+        #    or not all(isinstance(i, cls) for i in list_objs)):
+
+        #     raise TypeError("list_objs must be a list of instances")
+
+        # file_name = cls.__name__ + ".csv"
+        # with open(file_name, 'w') as my_file:
+        #     if list_objs is not None:
+        #         list_objs = [i.todictionary for i in list_objs]
+        #         if cls.__name__ == 'Rectangle':
+        #             records = ['id', 'width', 'height', 'x', 'y']
+        #         elif cls.__name__ == 'Square':
+        #             records = ['id', 'size', 'x', 'y']
+        #         script = csv.DictWriter(my_file, fieldnames=records)
+        #         script.writeheader()
+        #         script.writerows(list_objs)
+
+        filename = cls.__name__ + ".csv"
+        with open(filename, "w", newline="") as csvfile:
+            if list_objs is None or list_objs == []:
+                csvfile.write("[]")
+            else:
+                if cls.__name__ == "Rectangle":
+                    fieldnames = ["id", "width", "height", "x", "y"]
+                else:
+                    fieldnames = ["id", "size", "x", "y"]
+                writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+                for obj in list_objs:
+                    writer.writerow(obj.to_dictionary())

@@ -59,6 +59,14 @@ if id is not None, assign the public instance attribute id with this argument va
 otherwise, increment __nb_objects and assign the new value to the public instance attribute id
 This class will be the “base” of all other classes in this project. The goal of it is to manage id attribute in all your future classes and to avoid duplicating the same code (by extension, same bugs)
 
+JSON is one of the standard formats for sharing data representation.
+
+Update the class Base by adding the static method def to_json_string(list_dictionaries): that returns the JSON string representation of list_dictionaries:
+
+list_dictionaries is a list of dictionaries
+If list_dictionaries is None or empty, return the string: "[]"
+Otherwise, return the JSON string representation of list_dictionaries
+
 ## models/rectangle.py - Write the class Rectangle that inherits from Base:
 
 In the file models/rectangle.py

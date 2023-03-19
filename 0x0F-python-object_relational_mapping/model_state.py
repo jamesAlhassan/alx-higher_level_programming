@@ -11,11 +11,11 @@ Base = declarative_base()
 
 class State(Base):
     """
-       __table: The table name of the class
+       __table__: The table name of the class
         id : The State id of the class
         name: The State name of the class
     """
-    __table = 'states'
+    __tablename__ = 'states'
 
     id = Column(Integer, primary_key=True)
     name = Column(String(128), nullable=False)

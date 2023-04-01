@@ -10,4 +10,4 @@ if __name__ == '__main__':
     request = ur.Request(url)
 
     with ur.urlopen(request) as res:
-        print(dict(res.headers).get('X-Request-I'))
+        print(dict(res.headers).get('X-Request-Id'))

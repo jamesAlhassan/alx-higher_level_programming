@@ -4,12 +4,12 @@ Please list 10 commits (from the most recent to oldest) of the repository
 “rails” by the user “rails” You must use the GitHub API
 '''
 import requests as r
-import sys as s
+import sys
 
 
 if __name__ == '__main__':
-    repo_name = s.argv[1]
-    owner = s.argv[2]
+    repo_name = sys.argv[1]
+    owner = sys.argv[2]
 
     url = f'https://api.github.com/repos/{owner}/{repo_name}/commits'
 

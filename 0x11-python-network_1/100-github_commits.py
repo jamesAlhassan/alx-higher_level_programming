@@ -8,10 +8,10 @@ import sys as s
 
 
 if __name__ == '__main__':
-    repo = s.argv[1]
-    user = s.argv[2]
+    repo_name = s.argv[1]
+    owner = s.argv[2]
 
-    url = f'https://api.github.com/repos/{user}/{repo}/commits'
+    url = f'https://api.github.com/repos/{owner}/{repo_name}/commits'
 
     res = r.get(url)
     commits = res.json()

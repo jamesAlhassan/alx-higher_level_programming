@@ -10,12 +10,9 @@ import sys
 if __name__ == '__main__':
     repo_name = sys.argv[1]
     owner = sys.argv[2]
-
     url = f'https://api.github.com/repos/{owner}/{repo_name}/commits'
-
     res = r.get(url)
     commits = res.json()
-
     try:
         for i in range(10):
             print(f"{commits[1].get('sha')}:\

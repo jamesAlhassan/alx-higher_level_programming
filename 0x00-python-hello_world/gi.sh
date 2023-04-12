@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ADD=$(git add .)
-MSG=$(git commit -m "$1")
-PUSH=$(git push)
+git add .
+git commit -m $1
+git push
 

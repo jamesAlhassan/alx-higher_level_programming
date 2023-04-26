@@ -30,6 +30,13 @@ All your files must be executable
 The length of your files will be tested using wc
 You are not allowed to use var
 
+0-readme.js - script that reads and prints the content of a file.
+
+The first argument is the file path
+The content of the file must be read in utf-8
+If an error occurred during the reading, print the error object
+
+
 1-writeme.js - script that writes a string to a file.
 
 The first argument is the file path

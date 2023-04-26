@@ -69,3 +69,10 @@ The second argument the file path to store the body response
 The file must be UTF-8 encoded
 You must use the module request
 
+100-starwars_characters.js - script that prints all characters of a Star Wars movie:
+
+The first argument is the Movie ID - example: 3 = “Return of the Jedi”
+Display one character name by line
+You must use the Star wars API
+You must use the module request
+

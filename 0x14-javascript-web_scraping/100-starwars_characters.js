@@ -12,7 +12,7 @@ request.get(url, (err, res, content) => {
   }
 
   const data = JSON.parse(content);
-  const characters = data.characters;
+  const chars = data.characters;
   for (const cha of chars) {
     request(cha, (err, res, content) => {
       if (err) {

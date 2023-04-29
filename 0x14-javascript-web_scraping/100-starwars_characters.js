@@ -1,4 +1,3 @@
-
 #!/usr/bin/node
 
 const request = require('request');
@@ -14,14 +13,15 @@ request.get(url, (err, res, content) => {
 
   const data = JSON.parse(content);
   const characters = data.characters;
-  characters.forEach((character) => {
-  request(character, (err, res, content) => {
-    if (err) {
-      console.log(err);
-      return;
-    }
+
+  for (const char_ of chars) {
+	request(char_, (err, res, content) =>{
+	if (err){
+		console.log(err);
+		return;
+	}
     const data = JSON.parse(content);
     console.log(data.name);
+})
+  }
   });
-});
-});

@@ -13,15 +13,14 @@ request.get(url, (err, res, content) => {
 
   const data = JSON.parse(content);
   const characters = data.characters;
-
-  for (const char_ of chars) {
-	request(char_, (err, res, content) =>{
-	if (err){
-		console.log(err);
-		return;
-	}
-    const data = JSON.parse(content);
-    console.log(data.name);
-})
+  for (const cha of chars) {
+    request(cha, (err, res, content) => {
+      if (err) {
+        console.log(err);
+        return;
+      }
+      const char_data = JSON.parse(content);
+      console.log(char_data.name);
+    });
   }
-  });
+});
